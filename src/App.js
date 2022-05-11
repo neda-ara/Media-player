@@ -5,10 +5,7 @@ import "./index.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Media Player</h1>
-        <Home />
-      </header>
+      <Home />
     </div>
   );
 }
