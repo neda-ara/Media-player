@@ -5,13 +5,16 @@
 }
 
 .sidebar__wrapper {
-  width: 15rem;
-  background-color: black;
+  width: 16vw;
+  background-color: rgba(10, 9, 8, 0.75);
   min-height: 100vh;
+  position: fixed;
+  top: 0vh;
+  padding-top: 2rem;
 }
 .logo__wrapper {
   width: 100%;
-  margin-bottom: 8vh;
+  margin-bottom: 6vh;
 }
 .logo {
   height: 80px;
@@ -35,6 +38,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height: calc(100% - 100px);
 }
 
 .list__ul {

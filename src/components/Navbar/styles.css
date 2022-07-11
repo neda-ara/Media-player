@@ -4,8 +4,103 @@ body {
   box-sizing: border-box;
 }
 
-/* .nav__wrapper {
-  background-color: aliceblue;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__wrapper {
+  background-color: transparent;
   height: 10vh;
-  width: 100vw;
-} */
+  width: calc(100vw - 18vw);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  margin-left: 17vw;
+  margin-right: 1vw;
+  color: #fff;
+}
+
+.nav__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(100vw - 18vw);
+  height: 100%;
+  background: inherit;
+  transform-origin: top right;
+  transform: skewY(-1.5deg);
+  border-bottom: solid 2px black;
+  border-image: linear-gradient(to right, #fe6d73, #5a189a) 1;
+}
+
+.search__container {
+  height: 100%;
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+.grid-icon {
+  font-size: 20px;
+  color: #000;
+  /* margin-top: 2rem; */
+}
+
+.search__box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-left: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-icon {
+  color: #fe6d73;
+  font-size: 18px;
+}
+
+.search__bar {
+  outline: 0;
+  border: none;
+  font-size: 14px;
+  padding: 0 0.5rem;
+  min-width: 16rem;
+}
+
+.profile__container {
+  border-right: solid 2px #272932;
+}
+
+.profile-pic {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.user-icon {
+  font-size: 30px;
+  color: #000;
+}
+
+.user-name {
+  color: #5a189a;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 1rem;
+}
+
+.down-arrow-icon {
+  color: #272932;
+  font-size: 22px;
+  margin-right: 1rem;
+  z-index: 2;
+  cursor: pointer;
+}

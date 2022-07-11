@@ -1,0 +1,26 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #ffb3c1,
+    #ffbfcb,
+    #ffcad4,
+    #ffd6de,
+    #ffe1e7,
+    #fee5ee,
+    #fce9f4,
+    #faedf9,
+    #f1edfe,
+    #e3eeff,
+    #d5efff,
+    #caf0f8
+  );
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home__page__wrapper {
+  /* DARK-THEME
+  background-image: linear-gradient(to bottom, #0a0908, #34261e, #643e3a, #965764, #c1759e, #b97db3, #aa86c6, #9591d6, #677cb1, #446488, #2e4c60, #22333b); */
+  min-height: 100vh;
+  width: 84vw;
+  margin-left: 16vw;
+}

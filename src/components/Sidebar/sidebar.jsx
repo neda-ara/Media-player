@@ -8,7 +8,7 @@ import "./styles.css";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar__wrapper">
+    <div className="sidebar__wrapper" id="sidebar">
       <div className="logo__wrapper center">
         <img src={Logo} className="logo" alt="" />
       </div>
