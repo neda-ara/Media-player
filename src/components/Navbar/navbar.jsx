@@ -27,7 +27,10 @@ const Navbar = () => {
           <BiChevronDownCircle className="down-arrow-icon" />
         </div>
         <div className="actions__container">
-          <div className="dark__theme__switch"></div>
+          <label>
+            <input type="checkbox" className="dark__theme__switch" />
+            <span className="check"></span>
+          </label>
         </div>
       </div>
     </div>
