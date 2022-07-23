@@ -17,6 +17,9 @@ body {
   background-color: #f0f0f0;
   background-size: cover;
   background-attachment: fixed;
+  z-index: 3;
+  overflow-y: hidden;
+  box-sizing: border-box;
 }
 .home__page__wrapper {
   /* DARK-THEME
@@ -24,4 +27,33 @@ body {
   min-height: 100vh;
   width: 84vw;
   margin-left: 16vw;
+}
+
+.top__artists {
+  margin-top: 10vh;
+  height: 40vh;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#media-player {
+  height: 50vh;
+  width: 100%;
+  background-color: violet;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.section__heading {
+  margin: 0;
+  font-weight: 900;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.container__half {
+  width: 50%;
+  height: 100%;
+  background-color: turquoise;
 }
