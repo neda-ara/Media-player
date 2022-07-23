@@ -11,12 +11,15 @@ import { BiChevronDownCircle } from "react-icons/bi";
 import { ImSearch } from "react-icons/im";
 import { MdAccountCircle } from "react-icons/md";
 
-const Navbar = () => {
-  const [userDropdownOpen, setUserDropdownOpen] = useState(false);
-
+const Navbar = ({ userDropdownOpen, setUserDropdownOpen }) => {
   return (
     <div className="nav__wrapper" id="navbar">
-      <div className="search__container center">
+      <div
+        className="search__container center"
+        onClick={() => {
+          setUserDropdownOpen(false);
+        }}
+      >
         <BsFillGridFill className="grid-icon" />
         <div className="search__box">
           <ImSearch className="search-icon" />
